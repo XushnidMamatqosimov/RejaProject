@@ -1,0 +1,421 @@
+.main_frame{
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.main_frame .left_frame{
+    position: relative;
+    width: 305px;
+    height: 1315px;
+   background: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_frame .middle_frame{
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+
+}
+.right_frame{
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    background: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_frame .left_1{
+    position: relative;
+    width: 228px;
+    height: 267px;
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_frame .left_1-img{
+    position: relative;
+    width: 156px;
+    height: 142px;
+    margin-top: 20px;
+}
+.main_frame .marginer{
+    position: relative; 
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1px solid black;
+    background: rgb(106, 81, 81);
+}
+.main_frame .left_2{
+   position: relative;
+   width: 221px;
+   height: 126px;
+   margin-left: 44px;
+ 
+   
+}
+.left_frame .left_1-2{
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    background: rgb(211, 201, 8);
+}
+.main_frame .left_3{
+   position: relative;
+   width: 220px;
+   height: 153px;
+   margin-top: 25px;
+   margin-left: 45px;
+  
+   
+}
+.main_frame .left_frame .left_1-3{
+    position: relative;
+    width: 147.84px;
+    height: 25.65px;
+    margin-bottom: 6.65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: capitalize;
+    background: rgb(211, 201, 8);
+}
+.left-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 238px;
+    margin-top: 19px;
+
+}
+.left-icons .link_href{
+    text-decoration: none;
+    color: black;
+}
+.link_href .icon .icon-1{
+    position: relative;
+    width: 24.99px;
+    height: 22.8px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #ffb400;
+}
+
+.main_frame .left_4{
+   position: relative;
+   width: 220px;
+   height: 252px;
+   margin-left: 45px;
+   margin-top: 25px;
+  
+   
+}
+.main_frame .left_5{
+   position: relative;
+   width: 186px;
+   height: 148px;
+   margin-top: 25px;
+   margin-left: 45px;
+  
+   
+}
+.main_frame .left_2{
+   position: relative;
+   width: 221px;
+   height: 126px;
+   margin-left: 45px;
+   margin-top: 25px;
+
+}
+
+.skills {
+    width: 220px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+}
+
+.fill {
+    height: 100%;
+    background: #ffb400;
+}
+
+.english {
+    width: 100%;
+}
+
+.russian {
+    width: 80%;
+}
+
+.uzbek {
+    width: 60%;
+}
+
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.javascript {
+    width: 80%;
+}
+
+.php {
+    width: 75%;
+}
+
+.wordpress {
+    width: 85%;
+}
+
+.middle_frame{
+    position: absolute;
+    width: 971px;
+    height: 454px;
+    background: white;
+    
+    
+}
+
+.hero {
+    width: 100%;
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 50px;
+    box-sizing: border-box;
+
+    background-color: #f5f5f5;
+
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+.hero-text p {
+    width: 400px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hire-btn {
+    width: 133px;
+    height: 45px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #ffb400;
+    color: black;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.hire-btn span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.hero-image {
+    width: 50%;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: bottom;
+}
+.services-section {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 18px;
+    background: #f0f0f5;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    margin: 0 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.services-header p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #767676;
+}
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    padding: 0 7px;
+}
+
+.service-card {
+    min-height: 193px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service-icon {
+    margin-bottom: 22px;
+}
+
+.service-icon i {
+    font-size: 48px;
+    color: #ffb400;
+}
+
+.service-card h3 {
+    margin: 0 0 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.service-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #767676;
+}
+
+
+.advertising-card {
+    padding: 25px;
+}
+
+.advertising-card p {
+    margin-bottom: 10px;
+}
+
+
+.order-link {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #ffb400;
+    text-decoration: none;
+}
+
+.order-link span {
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.right_frame{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+
+}
+.hight_pic{
+    width: 30px;
+}
