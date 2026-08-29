@@ -413,9 +413,25 @@
 .right_frame{
    position: relative;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
 
 }
 .hight_pic{
+    position: relative;
+    display: flex;
+
     width: 30px;
+
+}
+.pic_right{
+  margin: 35px;
+}
+.middle_pic{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    justify-content: space-around;
 }
