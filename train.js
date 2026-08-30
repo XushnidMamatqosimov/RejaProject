@@ -1,5 +1,5 @@
 console.log("Jack Ma Maslahatlari");
-const list = [
+/* const list = [
     "yaxshi talaba boling", //0-20
     "togri boshliq tanlang va koproq xato qiling", // 20-30
     "Ozingizni biznessingizni boshlang", // 30-40
@@ -30,7 +30,7 @@ maslahatBering(12, (err, data)=>{
         console.log(data);
     }
 });
-console.log("passed here 1");
+console.log("passed here 1"); */
 
 
 
@@ -73,3 +73,16 @@ console.log("passed here 1"); */
     
 }
 run(); */ 
+
+// A - Task
+const word = "Assalom";
+const letter = "s";
+
+let num = 0;
+for (let i = 0; i < word.length; i++) {
+    if(word[i].toLowerCase() === letter.toLocaleLowerCase()){
+        num++;
+    }
+}
+console.log(num);
+
