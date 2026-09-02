@@ -1,4 +1,4 @@
-console.log("Jack Ma Maslahatlari");
+// console.log("Jack Ma Maslahatlari");
 /* const list = [
     "yaxshi talaba boling", //0-20
     "togri boshliq tanlang va koproq xato qiling", // 20-30
@@ -75,7 +75,7 @@ console.log("passed here 1"); */
 run(); */ 
 
 // A - Task
-const word = "Assalom";
+/* const word = "Assalom";
 const letter = "s";
 
 let num = 0;
@@ -84,5 +84,16 @@ for (let i = 0; i < word.length; i++) {
         num++;
     }
 }
-console.log(num);
+console.log(num); */
+
+// B-Task
+let count = 0;
+const exm = "adkjflajf234jflkj987";
+for (let char of exm ) {
+    if(!isNaN(char) && char !== " "){
+        count++;
+    }
+}
+
+console.log(count);
 
