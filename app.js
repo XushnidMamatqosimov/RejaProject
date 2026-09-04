@@ -4,6 +4,7 @@ const app = express();
 
 // MongoDB chaqirish;
 const db = require("./server").db();
+const mongodb = require("mongodb");
 let user;
 
 /* fs.readFile("database/user.json", "utf-8", function(err, data) {
@@ -52,6 +53,18 @@ app.get("/", function (req, res) {
                 res.render("reja", { items: data });
             }
         });
+});
+
+app.post("/delete-item", function (req, res) {
+    const itemId = req.body.id;
+    db.collection("plans").deleteOne({ _id: new mongodb.ObjectId(itemId)}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.status(500).json({ error: "something went wrong" });
+        } else {
+            res.json({ message: "Item deleted successfully" });
+        }
+    });
 });
 
 app.get("/author", function (req, res) {

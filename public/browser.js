@@ -37,3 +37,26 @@ document.getElementById("create-form")
                 console.log("Iltimos Qayta urinib ko'ring");
             });
     });
+
+document.addEventListener("click", function (e) {
+    // O'zgartirish tugmasi bosilganda
+    // delete oper
+    if (e.target.classList.contains("delete-me")) {
+        if (confirm("Siz bu elementni rostdan ham o'chirmoqchimisiz?")) {
+           axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
+            .then((response) => {
+                e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log("Iltimos Qayta urinib ko'ring");
+            });
+        }
+    }
+    
+    // edit oper
+    if (e.target.classList.contains("edit-me")) {
+        alert("O'zgartirish tugmasi bosildi");
+    }
+});
+
+
