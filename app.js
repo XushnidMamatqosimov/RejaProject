@@ -55,6 +55,23 @@ app.get("/", function (req, res) {
         });
 });
 
+app.post("/edit-item", function (req, res) {
+    const itemid = req.body.id;
+    const new_input = req.body.new_input;
+    db.collection("plans").findOneAndUpdate(
+        { _id: new mongodb.ObjectId(itemid) },
+        { $set: { reja: new_input } },
+        (err, data) => {
+            if (err) {
+                console.log(err);
+                res.status(500).json({ error: "something went wrong" });
+            } else {
+                res.json({ message: "Item updated successfully" });
+            }
+        }
+    );
+});
+
 app.post("/delete-item", function (req, res) {
     const itemId = req.body.id;
     db.collection("plans").deleteOne({ _id: new mongodb.ObjectId(itemId)}, (err, data) => {
@@ -63,6 +80,20 @@ app.post("/delete-item", function (req, res) {
             res.status(500).json({ error: "something went wrong" });
         } else {
             res.json({ message: "Item deleted successfully" });
+        }
+    });
+});
+
+app.post("/delete-all", function (req, res) {
+    if (!req.body.deleteAll) {
+        return res.status(400).json({ error: "Invalid request" });
+    }
+    db.collection("plans").deleteMany({}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.status(500).json({ error: "something went wrong" });
+        } else {
+            res.json({ message: "All items deleted successfully" });
         }
     });
 });
@@ -76,4 +107,6 @@ app.get("/author", function (req, res) {
 
     res.render("author", { user });
 });
+
+
 module.exports = app;
