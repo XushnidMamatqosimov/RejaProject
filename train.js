@@ -72,7 +72,7 @@ console.log("passed here 1"); */
     console.log(javob);
     
 }
-run(); */ 
+run(); */
 
 // A - Task
 /* const word = "Assalom";
@@ -87,7 +87,7 @@ for (let i = 0; i < word.length; i++) {
 console.log(num); */
 
 // B-Task
-let count = 0;
+/* let count = 0;
 const exm = "adkjflajf234jflkj987";
 for (let char of exm ) {
     if(!isNaN(char) && char !== " "){
@@ -95,5 +95,22 @@ for (let char of exm ) {
     }
 }
 
-console.log(count);
+console.log(count); */
+
+// C-Task
+function checkContent(str, str2) {
+    if (str.length !== str2.length) 
+        console.log("bular bir xil tarkibga ega so'zlar emas");
+    let changedStr = str.split("").sort();
+    let changedStr2 = str2.split("").sort();
+    if (changedStr === changedStr2) {
+        console.log("bular bir xil tarkibga ega so'zlar");
+    }
+    else {
+        console.log("bular bir xil tarkibga ega so'zlar emas");
+    }
+}
+
+checkContent("listen", "silent"); 
+
 
