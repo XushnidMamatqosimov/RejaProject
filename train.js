@@ -98,7 +98,7 @@ for (let char of exm ) {
 console.log(count); */
 
 // C-Task
-function checkContent(str, str2) {
+/* function checkContent(str, str2) {
     if (str.length !== str2.length) 
         console.log("bular bir xil tarkibga ega so'zlar emas");
     let changedStr = str.split("").sort();
@@ -111,6 +111,28 @@ function checkContent(str, str2) {
     }
 }
 
-checkContent("listen", "silent"); 
+checkContent("listen", "silent");  */
+
+const Shop = require("./Shop.js");
+
+const shop = new Shop (10,15,10);
+shop.add("bread", 5);
+shop.add("cola", 5);
+
+console.log("=======================")
+shop.status();
+console.log("=======================")
+
+shop.sell("bread", 7);
+shop.sell("milk", 7);
+shop.sell("cola", 21);
+
+console.log("=======================")
+shop.status();
+
+
+
+
+
 
 

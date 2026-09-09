@@ -29,7 +29,7 @@ document.getElementById("create-form")
             .post("/create-item", { reja: createField.value })
             .then((response) => {
                 document.getElementById("item-list")
-                .insertAdjacentHTML("beforeend", itemTemplate(response.data))
+                    .insertAdjacentHTML("beforeend", itemTemplate(response.data))
                 createField.value = "";
                 createField.focus();
             })
@@ -43,23 +43,23 @@ document.addEventListener("click", function (e) {
     // delete oper
     if (e.target.classList.contains("delete-me")) {
         if (confirm("Siz bu elementni rostdan ham o'chirmoqchimisiz?")) {
-           axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
-            .then((response) => {
-                e.target.parentElement.parentElement.remove();
-            })
-            .catch((err) => {
-                console.log("Iltimos Qayta urinib ko'ring");
-            });
+            axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
+                .then((response) => {
+                    e.target.parentElement.parentElement.remove();
+                })
+                .catch((err) => {
+                    console.log("Iltimos Qayta urinib ko'ring");
+                });
         }
     }
-    
+
     // edit oper
     if (e.target.classList.contains("edit-me")) {
-        let userInput = prompt("Ozgartirish kiriting", 
+        let userInput = prompt("Ozgartirish kiriting",
             e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
         if (userInput) {
-            axios.post("/edit-item", 
-                {id: e.target.getAttribute("data-id"), new_input: userInput.trim()})
+            axios.post("/edit-item",
+                { id: e.target.getAttribute("data-id"), new_input: userInput.trim() })
                 .then((response) => {
                     console.log(response.data);
                     e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
@@ -72,16 +72,16 @@ document.addEventListener("click", function (e) {
     }
 });
 
-document.getElementById("clean-all").addEventListener("click", function(){
-    axios.post("/delete-all", { deleteAll: true})
-    .then((response) => {
-        console.log(response.data.state);
-        document.location.reload();
-        document.getElementById("item-list").innerHTML = "";
-    })
-    .catch((err) => {
-        console.log("Iltimos Qayta urinib ko'ring");
-    });
+document.getElementById("clean-all").addEventListener("click", function () {
+    axios.post("/delete-all", { deleteAll: true })
+        .then((response) => {
+            console.log(response.data.state);
+            document.location.reload();
+            document.getElementById("item-list").innerHTML = "";
+        })
+        .catch((err) => {
+            console.log("Iltimos Qayta urinib ko'ring");
+        });
 });
 
 
