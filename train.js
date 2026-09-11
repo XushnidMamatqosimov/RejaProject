@@ -113,7 +113,7 @@ console.log(count); */
 
 checkContent("listen", "silent");  */
 
-const Shop = require("./Shop.js");
+/* const Shop = require("./Shop.js");
 
 const shop = new Shop (10,15,10);
 shop.add("bread", 5);
@@ -128,7 +128,9 @@ shop.sell("milk", 7);
 shop.sell("cola", 21);
 
 console.log("=======================")
-shop.status();
+shop.status(); */
+
+
 
 
 

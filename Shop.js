@@ -1,6 +1,8 @@
 const e = require("express");
 const moment = require("moment");
 const time = moment().format("YYYY.MM.DD HH:mm:ss");
+
+
 class Shop {
     bread;
     milk;
@@ -55,6 +57,7 @@ class Shop {
                  console.log("Yetarlicha mahsulot mavjud emas")
             }
         }
+    
     }
 
 
