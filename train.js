@@ -32,6 +32,8 @@ maslahatBering(12, (err, data)=>{
 });
 console.log("passed here 1"); */
 
+const { text } = require("express");
+
 
 
 
@@ -130,6 +132,24 @@ shop.sell("cola", 21);
 console.log("=======================")
 shop.status(); */
 
+// F task
+function findDouble(text){
+    for(let letter of text){
+        let count = 0;
+
+        for(let current of text){
+            if(letter == current){
+                count++
+            }
+        }
+        if(count == 2){
+            return true;
+        }
+    }
+    return false;
+}
+const res = findDouble("hallo");
+console.log(res);
 
 
 
