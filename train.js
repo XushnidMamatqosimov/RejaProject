@@ -133,7 +133,7 @@ console.log("=======================")
 shop.status(); */
 
 // F task
-function findDouble(text){
+/* function findDouble(text){
     for(let letter of text){
         let count = 0;
 
@@ -149,8 +149,21 @@ function findDouble(text){
     return false;
 }
 const res = findDouble("hallo");
-console.log(res);
+console.log(res); */
 
+// E - Task
+function getReverse(text){
+    if(typeof text !== "string"){
+        console.log("Iltimos qayta urinib koring: ")
+    }else{
+
+    let newText = text.split("").reverse().join("");
+    console.log(newText);
+    }
+}
+
+getReverse("123")
+getReverse(123)
 
 
 
